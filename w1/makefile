@@ -7,5 +7,7 @@ all:
 	gcc f.c -o f
 	gcc g.c -o g
 	gcc h.c -o h
+	gcc i.c -o i
+	gcc j.c -o j -lm
 clean:
-	rm -rf a b c d e f g h
+	rm -rf a b c d e f g h i j

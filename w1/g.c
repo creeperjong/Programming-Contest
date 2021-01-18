@@ -4,15 +4,15 @@
 int main(){
     int32_t time = 0;
     int32_t amp = 0;
-    int32_t fre = 0;
+    int32_t fr = 0;
     
     scanf("%d",&time);
 
     for(int32_t i = 0;i < time;i++){
         scanf("%d",&amp);
-        scanf("%d",&fre);
+        scanf("%d",&fr);
 
-        for(int32_t j = 0;j < fre;j++){
+        for(int32_t j = 0;j < fr;j++){
             for(int32_t k = 1;k <= amp;k++){
                 for(int32_t m = 0;m < k;m++){
                     printf("%d",k);
@@ -25,7 +25,7 @@ int main(){
                 }
                 printf("\n");
             }
-            if(j != fre - 1 || i != time - 1){
+            if(j != fr - 1 || i != time - 1){
                 printf("\n");
             }
         }
